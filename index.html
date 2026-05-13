@@ -187,56 +187,60 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
 .acid-blur {
   font-family: var(--display);
   font-weight: 900;
-  font-size: clamp(46px, 9vw, 130px);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  font-size: clamp(56px, 11vw, 150px);
+  line-height: 0.9;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #0a0a0a;
+  color: #050505;
+  -webkit-text-stroke: 3px #f3f3f3;
+  text-stroke: 3px #f3f3f3;
   margin: 56px 0 32px;
   position: relative;
   z-index: 2;
   text-shadow:
-    0 0 18px var(--acid),
-    0 0 36px var(--acid),
-    0 0 70px rgba(212, 255, 0, 0.7),
-    0 0 110px rgba(212, 255, 0, 0.4);
-  animation: acidPulse 4s ease-in-out infinite;
-  filter: blur(0.4px);
+    0 0 2px #111,
+    0 0 14px rgba(212, 255, 0, 0.95),
+    0 0 28px rgba(212, 255, 0, 0.9),
+    0 0 50px rgba(212, 255, 0, 0.72);
+  animation: acidPulse 3.6s ease-in-out infinite;
+  filter: blur(0.2px);
 }
 .acid-blur .line { display: block; }
 .acid-blur .small {
-  font-size: 0.55em;
+  font-size: 0.2em;
   display: block;
-  margin-top: 16px;
+  margin-top: 20px;
+  letter-spacing: 0.2em;
+  -webkit-text-stroke: 1px #f3f3f3;
+  text-transform: lowercase;
   text-shadow:
-    0 0 12px var(--acid),
-    0 0 24px var(--acid),
-    0 0 48px rgba(212, 255, 0, 0.5);
+    0 0 8px rgba(212, 255, 0, 0.95),
+    0 0 18px rgba(212, 255, 0, 0.85);
 }
 
 @keyframes acidPulse {
   0%, 100% {
     text-shadow:
-      0 0 18px var(--acid),
-      0 0 36px var(--acid),
-      0 0 70px rgba(212, 255, 0, 0.7),
-      0 0 110px rgba(212, 255, 0, 0.4);
+      0 0 2px #111,
+      0 0 12px rgba(212, 255, 0, 0.9),
+      0 0 26px rgba(212, 255, 0, 0.85),
+      0 0 44px rgba(212, 255, 0, 0.65);
   }
   33% {
     text-shadow:
-      0 0 22px var(--acid-bright),
-      0 0 44px var(--acid),
-      0 0 90px rgba(226, 255, 34, 0.7),
-      0 0 140px rgba(212, 255, 0, 0.45);
-    filter: blur(0.6px);
+      0 0 2px #151515,
+      0 0 18px rgba(226, 255, 34, 1),
+      0 0 34px rgba(212, 255, 0, 0.95),
+      0 0 58px rgba(212, 255, 0, 0.78);
+    filter: blur(0.35px);
   }
   66% {
     text-shadow:
-      0 0 20px var(--acid-soft),
-      0 0 40px var(--acid-soft),
-      0 0 80px rgba(200, 255, 0, 0.7),
-      0 0 120px rgba(212, 255, 0, 0.42);
-    filter: blur(0.3px);
+      0 0 2px #111,
+      0 0 16px rgba(200, 255, 0, 0.95),
+      0 0 32px rgba(200, 255, 0, 0.88),
+      0 0 52px rgba(212, 255, 0, 0.72);
+    filter: blur(0.25px);
   }
 }
 
@@ -246,8 +250,8 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   animation: letterFloat 6s ease-in-out infinite;
 }
 @keyframes letterFloat {
-  0%, 100% { color: #0a0a0a; }
-  50% { color: #161616; transform: translateY(-1px); }
+  0%, 100% { color: #050505; }
+  50% { color: #111; transform: translateY(-1px); }
 }
 
 .hero-bottom {
@@ -824,8 +828,8 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
 
     <h1 class="acid-blur">
       <span class="line">Digital-дизайн</span>
-      <span class="line">для брендов:</span>
-      <span class="small">от визуальной системы<br>до креативов, которые<br>работают на показатели</span>
+      <span class="line">для брендов</span>
+      <span class="small">от визуальной системы до креативов, которые работают на показатели</span>
     </h1>
 
     <div class="hero-bottom">
