@@ -1,1 +1,1 @@
-# kuryanova.com
+# kuryanova.github.io
