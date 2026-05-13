@@ -205,11 +205,15 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
   animation: acidPulse 3.6s ease-in-out infinite;
   filter: blur(0.2px);
 }
-.acid-blur .line { display: block; }
+.acid-blur .line {
+  display: block;
+  white-space: nowrap;
+}
 .acid-blur .small {
   font-size: 0.2em;
   display: block;
   margin-top: 20px;
+  line-height: 1.2;
   letter-spacing: 0.2em;
   -webkit-text-stroke: 1px #f3f3f3;
   text-transform: lowercase;
@@ -829,6 +833,7 @@ button { font: inherit; cursor: pointer; background: none; border: 0; color: inh
     <h1 class="acid-blur">
       <span class="line">Digital-дизайн</span>
       <span class="line">для брендов</span>
+      <span class="small">от визуальной системы<br>до креативов, которые работают<br>на показатели</span>
       <span class="small">от визуальной системы до креативов, которые работают на показатели</span>
     </h1>
 
